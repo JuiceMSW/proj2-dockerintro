@@ -18,10 +18,6 @@ def file(name):
 		abort(403)
 	else:
 		abort(404)
-	# elif "~" in name or "//" in name or ".." in name:
-	# 	return render_template("403.html"), 403
-	# else:
-	# 	return render_template("404.html"), 404
 
 @app.errorhandler(404)
 def page_not_found(e):
